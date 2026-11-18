@@ -1,0 +1,31 @@
+{
+  "name": "GLesCrocs",
+  "version": "1.0.0",
+  "description": "GLesCrocs - Restaurant management system",
+  "type": "module",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "node backend/src/server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/src/server.js",
+    "seed": "npm --prefix backend run seed",
+    "remove-demo": "npm --prefix backend run remove-demo",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:ps": "docker-compose ps"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "keywords": [
+    "restaurant",
+    "management",
+    "system"
+  ],
+  "author": "",
+  "license": "ISC"
+}
