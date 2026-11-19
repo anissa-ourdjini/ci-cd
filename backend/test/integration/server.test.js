@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { server, pool } from '../src/server.js';
+import { server, pool } from '../../src/server.js';
 
 test('GET / returns an API status response', async () => {
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));

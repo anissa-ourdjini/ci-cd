@@ -6,7 +6,8 @@
     "dev": "vite",
     "test": "vite build",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "npx --yes cypress@13.17.0 run"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",
